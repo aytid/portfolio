@@ -69,15 +69,38 @@
 			transform:translateY(-.05%);
 			box-shadow:0 4rem 8rem rgba(0,0,0,0.5);
   		}
-		.grid{
+
+		.grid2{
 			display:grid;
 			height:40rem;
-			width:50rem;
+			width:70rem;
+			grid-gap:0.5rem;
+			grid-template-columns: repeat(4, 0.5fr);
+			align-items:start;
+		}
+		.grid2-item{
+			background-color:#FFD93D;
+			border-radius:0.4rem;
+			text-align:center;
+			overflow:hidden;
+			box-shadow:0 3rem 6rem rgba(0,0,0,0.1);
+			cursor:pointer;
+			transition:0.2s;
+		}
+		.grid2-item:hover{
+			transform:translateY(-.05%);
+			box-shadow:0 4rem 8rem rgba(0,0,0,0.5);
+  		}
+		
+		.grid3{
+			display:flex;
+			height:40rem;
+			width:50rem;	
 			grid-gap:0.25rem;
 			grid-template-columns: repeat(5, 0.5fr);
 			align-items:start;
 		}
-		.grid-item{
+		.grid3-item{
 			background-color:#39B5E0;
 			border-radius:0.4rem;
 			overflow:hidden;
@@ -85,7 +108,7 @@
 			cursor:pointer;
 			transition:0.2s;
 		}
-		.grid-item:hover{
+		.grid3-item:hover{
 			transform:translateY(-.05%);
 			box-shadow:0 4rem 8rem rgba(0,0,0,0.5);
   		}
@@ -164,7 +187,7 @@
 	<div class="grid1-item">
 		<div class="card">
 		<div class="card-content">
-		<p style="font-size: 30px;"class="card-header";>Intermediate from<br><b>Sri Chaitanya College</b></p>
+		<p style="font-size: 35px;"class="card-header";>Intermediate from<br><b>Sri Chaitanya College</b></p>
 		<p style="font-size: 14px;" class="card-header"><u>Address:</u>Hyderabad<br><u>Year of Pass:</u>2018-20<br><u>Score:</u>971 out of 1000</p>
 		</div>
 		</div>
@@ -181,53 +204,70 @@
 
 <section id="3">
 <br><br><br><br><br>
-  <h2>Hobbies & Interests</h2>
-  <ul style="font-size:20px;">
-	<li>Playing Chess</li><br>
-	<li>Photography</li><br>
-	<li>Doing Math</li><br>
-	<li>Watching Movies</li><br>
-	<li>Listening Songs</li>
-  </ul>
+<h2>Hobbies & Interests</h2>
+<div class="grid2">
+	<div class="grid2-item">
+		<div class="card">	
+		<div class="card-content">
+		<p style="font-size: 35px;" class="card-header"><b>Playing Chess</b></p>
+		</div>
+		</div>
+	</div>
+	<div class="grid2-item">
+		<div class="card">
+		<div class="card-content">
+		<p style="font-size: 35px;"class="card-header";><b>Photography</b></p>
+		</div>
+		</div>
+	</div>
+	<div class="grid2-item">
+		<div class="card">	
+		<div class="card-content">
+		<p style="font-size:35px;" class="card-header"><b>Watching Movies</b></p>
+		</div>
+		</div>
+	</div>
+<div>
+
+
+
 </section>
 
 <section id="4">
 <br><br><br><br><br>
   <h2>Skills</h2>
-<div class="grid">
-	<div class="grid-item">
+<div class="grid3">
+	<div class="grid3-item">
 		<div class="card">	
 		<div class="card-content">
-		<p style="font-size: 35px;text-align:center;" class="card-header">C</p>
-		<p style="font-size: 20px;text-align:center;" class="card-header">Advanced</p>
+		<p style="font-size: 35px;text-align:center;" class="card-header"><b>C</b></p>
 		</div>
 		</div>
 	</div>
-	<div class="grid-item">
+	<div class="grid3-item">
 		<div class="card">
 		<div class="card-content">
-		<p style="font-size: 35px;text-align:center;" class="card-header">JAVA</p>
-		<p style="font-size: 20px;text-align:center;" class="card-header">Advanced</p>
+		<p style="font-size: 35px;text-align:center;"class="card-header";><b>JAVA</b></p>
 		</div>
 		</div>
 	</div>
-	<div class="grid-item">
+	<div class="grid3-item">
 		<div class="card">	
 		<div class="card-content">
-		<p style="font-size: 30px;text-align:center;" class="card-header">Python</p>
-		<p style="font-size: 20px;text-align:center;" class="card-header">Expert</p>
+		<p style="font-size:35px;text-align:center;" class="card-header"><b>Python</b></p>
 		</div>
 		</div>
 	</div>
-	<div class="grid-item">
+	<div class="grid3-item">
 		<div class="card">	
 		<div class="card-content">
-		<p style="font-size: 25px;text-align:center;" class="card-header">Web Design</p>
-		<p style="font-size: 20px;text-align:center;" class="card-header">Expert</p>
+		<p style="font-size:25px;text-align:center;" class="card-header"><b>Web<br> design</b></p>
 		</div>
 		</div>
 	</div>
 <div>
+
+
 </section>
 
 <section id="5">
