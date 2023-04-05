@@ -1,0 +1,321 @@
+<html>
+	<head>
+		<title>PORTFOLIO</title> 
+		<style>
+		html {
+			scroll-behavior: smooth;
+		}
+		body {
+		background: -webkit-linear-gradient(70deg, #FFE15D 30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #609966 60%, #5BC0F8 60%);
+		background: -o-linear-gradient(70deg, #FFE15D 30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #609966 60%, #5BC0F8 60%);
+		background: -moz-linear-gradient(70deg, #FFE15D 30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #609966 60%, #5BC0F8 60%);
+		background: linear-gradient(70deg, #FFE15D 30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, #609966 60%, #5BC0F8 60%);
+
+ 		}
+    		p{
+	      color: black;
+      	font-size: 20px;
+    		}
+		a{
+		color:blue;
+      	font-size: 20px;
+    		}
+		h1{
+	      color: white;
+      	font-size: 150px;
+		text-align:left;
+		text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    		}
+		h2,h3{
+	      color: white;
+      	font-size: 50px;
+		text-align:left;
+		text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    		}
+		h4{
+	      color: white;
+      	font-size: 100px;
+		text-align:left;
+		text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    		}
+			
+		button{
+		height:60px;
+		width:120px;
+		color:black;
+		z-index: 1;
+		background-color:white;
+		border-radius:30px;
+		border: 0.5px solid black;
+		margin-right:30px;
+		margin-left:10px;
+		box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+		}
+		.grid1{
+			display:grid;
+			height:50rem;
+			width:100rem;
+			grid-gap:0.5rem;
+			grid-template-columns: repeat(5, 0.5fr);
+			align-items:start;
+		}
+		.grid1-item{
+			background-color:#FFD93D;
+			border-radius:0.4rem;
+			overflow:hidden;
+			box-shadow:0 3rem 6rem rgba(0,0,0,0.1);
+			cursor:pointer;
+			transition:0.2s;
+		}
+		.grid1-item:hover{
+			transform:translateY(-.05%);
+			box-shadow:0 4rem 8rem rgba(0,0,0,0.5);
+  		}
+		.grid{
+			display:grid;
+			height:50rem;
+			width:60rem;
+			grid-gap:0.25rem;
+			grid-template-columns: repeat(5, 0.5fr);
+			align-items:start;
+		}
+		.grid-item{
+			background-color:#39B5E0;
+			border-radius:0.4rem;
+			overflow:hidden;
+			box-shadow:0 3rem 6rem rgba(0,0,0,0.1);
+			cursor:pointer;
+			transition:0.2s;
+		}
+		.grid-item:hover{
+			transform:translateY(-.05%);
+			box-shadow:0 4rem 8rem rgba(0,0,0,0.5);
+  		}
+		.card-content{
+			padding:3rem;
+		}
+		.card-header{
+			font-size:3rem;
+			font-weight:500;
+			color:black;
+			margin-bottom:1.5rem;
+		}
+		.card-text{
+			font-size:1.6rem;
+			letter-spacing:0.1rem;
+			line-height:1.7;
+			color:black;
+			margin-bottom:2.5rem;
+		}
+      	th,td,tr{
+        border: 1px solid black;
+        padding: 10px;
+      }
+		@keyframes fadeIn {
+   		 0% {
+      		opacity: 0;
+    			}
+    		100% {
+      		opacity: 1;
+    			}
+  		}
+
+		img{
+		width: 16.6%;
+		}
+  	</style> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous"> 
+	</head>
+	<body>
+	<button style="position:fixed;top:50;left:0;"onclick="f0()"> Go to top</button>
+	<button style="position:fixed;top:50;left:130;"onclick="f1()">Personal Information</button>
+	<button style="position:fixed;top:50;left:260;"onclick="f2()">Educational Qualifications</button>
+	<button style="position:fixed;top:50;left:390;"onclick="f3()">Hobbies & Interests</button>
+	<button style="position:fixed;top:50;left:520;"onclick="f4()">Skills</button>
+	<button style="position:fixed;top:50;left:650;"onclick="f5()">Achievements</button>
+	<button style="position:fixed;top:50;left:780;"onclick="f6()">Certificates</button>
+	<button style="position:fixed;top:50;left:910;"onclick="f7()">Say hello!</button>
+	
+
+<section id="0">
+	<br>
+    <h1 style="opacity:0;animation:fadeIn 1s ease-in forwards;">Hi there!</h1>
+      <h4 style="opacity:0;animation:fadeIn 1s ease-in forwards;font-size:100px;">This is my portfolio.</h4>
+</section>
+<section id="1">
+<br><br><br><br><br>
+  <div>
+    <h2>Personal Information</h2>
+	 <p>Hi there! My name is Rohan Aditya Thirumala</p>
+	<p>I am a student pursuing B.Tech in Computer Science and Engineering from KITS Warangal.</p>
+  </div>
+</div>
+</section>
+<section id="2">
+<br><br><br><br><br>
+  <h2>Educational Qualifications</h2>
+<div class="grid1">
+	<div class="grid1-item">
+		<div class="card">	
+		<div class="card-content">
+		<p style="padding-bottom: 50px;font-size: 50px;text-align:center;" class="card-header">Schooling from<br><b>S.F.S High School</b></p>
+		<p style="padding-bottom: 50px;font-size: 24px;" class="card-header"><u>Address:</u>Korutla<br><u>Year of Pass:</u>2017-18<br><u>Score:</u>9.8 CGPA</p>
+		</div>
+		</div>
+	</div>
+	<div class="grid1-item">
+		<div class="card">
+		<div class="card-content">
+		<p style="padding-bottom: 50px;text-align:center"class="card-header";>Intermediate from<br><b>Sri Chaitanya Jr. College</b></p>
+		<p style="padding-bottom: 50px;font-size: 24px;" class="card-header"><u>Address:</u>Hyderabad<br><u>Year of Pass:</u>2018-20<br><u>Score:</u>971 out of 1000</p>
+		</div>
+		</div>
+	</div>
+	<div class="grid1-item">
+		<div class="card">	
+		<div class="card-content">
+		<p style="padding-bottom: 50px;text-align:center;font-size:42.9px;" class="card-header">B.Tech from <b>Kakatiya Institute of Technology and Science</b></p>
+		<p style="padding-bottom: 50px;font-size: 24px;" class="card-header"><u>Address:</u>Hanmakonda<br><u>Year of Pass:</u>2020-Present<br><u>Score:</u>8.2 CGPA(now)</p>
+		</div>
+		</div>
+<div>
+</section>
+
+<section id="3">
+<br><br><br><br><br>
+  <h2>Hobbies & Interests</h2>
+  <ul style="font-size:20px;">
+	<li>Playing Chess</li><br>
+	<li>Photography</li><br>
+	<li>Doing Math</li><br>
+	<li>Watching Movies</li><br>
+	<li>Listening Songs</li>
+  </ul>
+</section>
+
+<section id="4">
+<br><br><br><br><br>
+  <h2>Skills</h2>
+  <p>I am proficient in programming languages such as C, Java, Python, Web programming and DBMS</p>
+ <div class="grid">
+	<div class="grid-item">
+		<div class="card">	
+		<div class="card-content">
+		<p style="text-align:center;" class="card-header">C</p>
+		<p style="padding-bottom: 50px;font-size: 24px;text-align:center;" class="card-header"><u>Proficiency</u><br>Advanced</p>
+		</div>
+		</div>
+	</div>
+	<div class="grid-item">
+		<div class="card">
+		<div class="card-content">
+		<p style="text-align:center;"class="card-header">JAVA</p>
+		<p style="padding-bottom: 50px;font-size: 24px;text-align:center;" class="card-header"><u>Proficiency</u><br>Advanced</p>
+		</div>
+		</div>
+	</div>
+	<div class="grid-item">
+		<div class="card">	
+		<div class="card-content">
+		<p style="text-align:center;font-size:30px;"class="card-header"><b>Web design</b></p>
+		<p style="padding-bottom: 50px;font-size: 24px;text-align:center;" class="card-header"><u>Proficiency</u><br>Expert</p>
+		</div>
+		</div>
+	</div>
+	<div class="grid-item">
+		<div class="card">	
+		<div class="card-content">
+		<p style="text-align:center;"class="card-header">Python</p>
+		<p style="padding-bottom: 50px;font-size: 24px;text-align:center;" class="card-header"><u>Proficiency</u><br>Expert</p>
+		</div>
+		</div>
+	</div>
+<div>
+</section>
+
+<section id="5">
+<br><br><br><br>
+  <h2>Achievements</h2>
+  <ul style="font-size:20px;">
+	<li><a href="https://aytid.github.io/test/college.html">Designed and developed a web application to facilitate seamless navigation for students between different blocks within the college campus</a></li><br>
+	<li><a href="https://rohanaditya.streamlit.app/">Designed and developed a web application to assist students in making informed decisions about their attendance by providing real-time attendance tracking and analysis</a></li><br>
+	<li><a href="https://rohanaditay-sgpa-estimator.streamlit.app/">Developed a web application for students that calculates the minimum SGPA required to achieve their desired CGPA</a></li><br>
+	<li>Created a web application utilizing machine learning algorithms to forecast stock prices for selected stocks</li><br>
+  </ul>
+</section>
+<br><br><br><br>
+
+<section id="6">
+<br><br><br><br><br>
+  <h2>Certificates</h2>
+  <ul style="font-size:20px;">
+	<li>Certificate in Web Development</li><br>
+	<li>Certificate in Mobile App Development</li><br>
+	<li>Certificate in Machine Learning</li><br>
+	<li>Certificate in Database Management</li><br>
+  </ul>
+</section>
+
+<section id="7">
+<br><br><br><br><br>
+  <h2>Say hello!</h2>
+  <p>You can contact me through..</p>
+  <a href="https://www.linkedin.com/in/thirumala-rohanaditya-6b8228264">~LinkedIn</a><br><br>
+  <a href="mailto:adityathirumala20@gmail.com">~Mail</a><br><br>
+<a href="https://instagram.com/rohanaditya_03?igshid=YmMyMTA2M2Y=">~Instagram</a>
+</section>
+<br><br><br><br><br><br><br><br><br><br>
+<script>
+function f0() 
+{
+  window.location.href = "#0";
+}
+function f1() 
+{
+  window.location.href = "#1";
+}
+function f2() 
+{
+  window.location.href = "#2";
+}
+function f3() 
+{
+  window.location.href = "#3";
+}
+function f4() 
+{
+  window.location.href = "#4"; 
+}
+function f5() 
+{
+  window.location.href = "#5";
+}
+function f6() 
+{
+  window.location.href = "#6";
+}
+function f7() 
+{
+  window.location.href = "#7";
+}
+function f8() 
+{
+  window.location.href = "#8";
+}
+function linkedin()
+{
+	document.location.href = "https://www.linkedin.com/in/thirumala-rohanaditya-6b8228264";
+}
+function mail()
+{
+	window.location.href = "mailto:adityathirumala20@gmail.com"
+}
+function ins()
+{
+	document.location.href="https://instagram.com/rohanaditya_03?igshid=YmMyMTA2M2Y=";
+}
+
+	</script>
+	<h1>Thank you.<h1/>
+</body>
+</html>
