@@ -6,6 +6,7 @@
 			scroll-behavior: smooth;
 		}
 		body {
+		font-family: Lato,Helvetica,Arial,sans-serif;
 		background: -webkit-linear-gradient(70deg, #FFE15D 30%, rgba(0,0,0,0) 30%), -webkit-linear-gradient(30deg, #609966 60%, #5BC0F8 60%);
 		background: -o-linear-gradient(70deg, #FFE15D 30%, rgba(0,0,0,0) 30%), -o-linear-gradient(30deg, #609966 60%, #5BC0F8 60%);
 		background: -moz-linear-gradient(70deg, #FFE15D 30%, rgba(0,0,0,0) 30%), -moz-linear-gradient(30deg, #609966 60%, #5BC0F8 60%);
@@ -45,13 +46,14 @@
 		color:black;
 		z-index: 1;
 		background-color:white;
-		border-radius:30px;
+		border-radius:20px;
 		border: 0.5px solid black;
 		box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 		}
 		.grid1{
 			display:grid;
 			height:40rem;
+			
 			width:70rem;
 			grid-gap:2.5rem;
 			grid-template-columns: repeat(4, 0.5fr);
@@ -64,24 +66,25 @@
 			box-shadow:0 3rem 6rem rgba(0,0,0,0.1);
 			cursor:pointer;
 			transition:0.2s;
+			align-items: center;
+        		justify-content: center;
 		}
 		.grid1-item:hover{
 			transform:translateY(-.05%);
-			box-shadow:0 4rem 8rem rgba(0,0,0,0.5);
+			box-shadow:0 1rem 1rem rgba(0,0,0,1);
   		}
 
 		.grid2{
 			display:grid;
 			height:40rem;
 			width:50rem;
-			grid-gap:0.5rem;
 			grid-template-columns: repeat(3, 0.5fr);
+			grid-gap:2rem;
 			align-items:start;
 		}
 		.grid2-item{
 			background-color:#FFD93D;
-			border-radius:0.4rem;
-			text-align:center;
+			border-radius:0.4rem;	
 			overflow:hidden;
 			box-shadow:0 3rem 6rem rgba(0,0,0,0.1);
 			cursor:pointer;
@@ -89,7 +92,7 @@
 		}
 		.grid2-item:hover{
 			transform:translateY(-.05%);
-			box-shadow:0 4rem 8rem rgba(0,0,0,0.5);
+			box-shadow:0 1rem 1rem rgba(0,0,0,1);
   		}
 		
 		.grid3{
@@ -110,7 +113,7 @@
 		}
 		.grid3-item:hover{
 			transform:translateY(-.05%);
-			box-shadow:0 4rem 8rem rgba(0,0,0,0.5);
+			box-shadow:0 1rem 1rem rgba(0,0,0,1);
   		}
 		.card-content{
 			padding:2rem;
@@ -147,7 +150,9 @@
   	</style> 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous"> 
 	</head>
+	
 	<body>
+	
 	<button style="position:fixed;top:50;left:0;"onclick="f0()"> Go to top</button>
 	<button style="position:fixed;top:50;left:120;"onclick="f1()">Personal Information</button>
 	<button style="position:fixed;top:50;left:240;"onclick="f2()">Educational Qualifications</button>
@@ -161,18 +166,16 @@
 <section id="0">
 	<br>
     <h1 style="opacity:0;animation:fadeIn 1s ease-in forwards;">Hi there!</h1>
-      <h4 style="opacity:0;animation:fadeIn 1s ease-in forwards;font-size:90px;">This is my portfolio.</h4>
+      <h4 style="opacity:0;animation:fadeIn 1s ease-in forwards;font-size:100px;">This is my portfolio.</h4>
 </section>
 <section id="1">
 <br><br><br><br><br>
   <div>
     <h2>Personal Information</h2>
-	 <p>Hi there! My name is Rohan Aditya Thirumala</p>
-	<p>I am a student pursuing B.Tech in Computer Science and Engineering from KITS Warangal.</p>
-	<p><u>Date of Birth</u> &emsp;<b>12-February-2003</b></p>
-	<p><u>Mobile Number</u> &emsp;	<b>97013XXXXX</b></p>
-	<p><u>Address:</u></p>
-	<p>1-1-293/2,Bheemunidubba,Korutla,505326</p>
+	<p>Hi there! My name is Rohan Aditya Thirumala</p>
+	<p><u>Date of Birth</u> &emsp;12-February-2003</p>
+	<p><u>Mobile Number</u> &emsp;97013XXXXX</p>
+	<p><u>Address:</u>&emsp;1-1-293/2,Bheemunidubba,Korutla,505326</p>
   </div>
 </div>
 </section>
@@ -183,24 +186,24 @@
 	<div class="grid1-item">
 		<div class="card">	
 		<div class="card-content">
-		<p style="font-size: 35px;" class="card-header">Schooling from<br><b>S.F.S High School</b></p>
-		<p style="font-size: 14px;" class="card-header"><u>Address:</u>Korutla<br><u>Year of Pass:</u>2017-18<br><u>Score:</u>9.8 CGPA</p>
+		<p style="font-size: 35px;" class="card-header">Schooling from<br><b>St. Francis De Sales High School,<br></b>Korutla</p>
+		<p style="font-size: 14px;" class="card-header"><b>Year of Passing:</b>2017-18<br><b>Score:</b>9.8 CGPA</p>
 		</div>
 		</div>
 	</div>
 	<div class="grid1-item">
 		<div class="card">
 		<div class="card-content">
-		<p style="font-size: 35px;"class="card-header";>Intermediate from<br><b>Sri Chaitanya College</b></p>
-		<p style="font-size: 14px;" class="card-header"><u>Address:</u>Hyderabad<br><u>Year of Pass:</u>2018-20<br><u>Score:</u>971 out of 1000</p>
+		<p style="font-size: 35px;"class="card-header";>Intermediate from<br><b>Sri Chaitanya Junior College,<br></b>Hyderabad</p>
+		<p style="font-size: 14px;" class="card-header"><b>Year of Passing:</b>2018-20<br><b>Score:</b>971 out of 1000</p>
 		</div>
 		</div>
 	</div>
 	<div class="grid1-item">
 		<div class="card">	
 		<div class="card-content">
-		<p style="font-size:35px;" class="card-header">B.Tech from<br><b>KITS</b></p>
-		<p style="font-size: 14px;" class="card-header"><b>Kakatiya Institute of Technology and Science</b><br><br><u>Address:</u>Hanmakonda<br><u>Year of Pass:</u>2020-Present<br><u>Score:</u>8.2 CGPA(now)</p>
+		<p style="font-size:35px;" class="card-header">B.Tech from<br><b>Kakatiya Institute of Technology and Science</b></p>
+		<p style="font-size: 14px;" class="card-header"><b>Address:</b>Hanmakonda<br><b>Year of Passing:</b>2020-Present<br><b>Score:</b>8.2 CGPA(now)</p>
 		</div>
 		</div>
 <div>
@@ -209,46 +212,46 @@
 <section id="3">
 <br><br><br><br><br>
 <h2>Hobbies & Interests</h2>
-<div class="grid2">
-	<div class="grid2-item">
+<div class="grid3">
+	<div class="grid3-item">
 		<div class="card">	
 		<div class="card-content">
-		<p style="font-size: 25px;" class="card-header"><b>Playing Chess</b></p>
+		<p style="font-size: 30px;text-align:center;" class="card-header"><b>Playing Chess</b></p>	
 		</div>
 		</div>
 	</div>
-	<div class="grid2-item">
+	<div class="grid3-item">
 		<div class="card">
 		<div class="card-content">
-		<p style="font-size: 25px;"class="card-header"><b>Photography</b></p>
+		<p style="font-size: 30px;text-align:center;" class="card-header"><b>Photography&<br>Videography</b></p>	
 		</div>
 		</div>
 	</div>
-	<div class="grid2-item">
+	<div class="grid3-item">
 		<div class="card">	
 		<div class="card-content">
-		<p style="font-size:25px;" class="card-header"><b>Watching Movies</b></p>
+		<p style="font-size: 30px;text-align:center;" class="card-header"><b>Watching Movies</b></p>	
 		</div>
 		</div>
 	</div>	
-	<div class="grid2-item">
+	<div class="grid3-item">
 		<div class="card">
 		<div class="card-content">
-		<p style="font-size: 25px;"class="card-header"><b>Listening Songs</b></p>
+		<p style="font-size: 30px;text-align:center;" class="card-header"><b>Listening Songs</b></p>	
 		</div>
 		</div>
 	</div>	
-	<div class="grid2-item">
+	<div class="grid3-item">
 		<div class="card">
 		<div class="card-content">
-		<p style="font-size: 25px;"class="card-header"><b>Computer Programming</b></p>
+		<p style="font-size: 30px;text-align:center;" class="card-header"><b>Computer Programming</b></p>	
 		</div>
 		</div>
 	</div>	
-	<div class="grid2-item">
+	<div class="grid3-item">
 		<div class="card">
 		<div class="card-content">
-		<p style="font-size: 25px;"class="card-header"><b>Cooking</b></p>
+		<p style="font-size: 30px;text-align:center;" class="card-header"><b>Cooking</b></p>	
 		</div>
 		</div>
 	</div>	
