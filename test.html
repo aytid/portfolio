@@ -39,6 +39,11 @@
 		text-align:left;
 		text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     		}
+		hr{
+ 	         height: 2px;
+       	  background-color: black;
+       	  border: none;
+    		}
 			
 		button{
 		height:60px;
@@ -131,17 +136,9 @@
 			color:black;
 			margin-bottom:2.5rem;
 		}
-      	th,td,tr{
-        border: 1px solid black;
-        padding: 10px;
-      }
 		@keyframes fadeIn {
-   		 0% {
-      		opacity: 0;
-    			}
-    		100% {
-      		opacity: 1;
-    			}
+   		 0% {opacity: 0;}
+    		100% {opacity: 1;}
   		}
 
 		img{
@@ -172,12 +169,25 @@
 <br><br><br><br><br>
   <div>
     <h2>Personal Information</h2>
-	<p>Hi there! My name is Rohan Aditya Thirumala</p>
-	<p><u>Date of Birth</u> &emsp;12-February-2003</p>
-	<p><u>Mobile Number</u> &emsp;97013XXXXX</p>
-	<p><u>Address:</u>&emsp;1-1-293/2,Bheemunidubba,Korutla,505326</p>
-  </div>
+	<div class="grid1">
+	<div class="grid1-item">
+		<div class="card">	
+		<div class="card-content">
+		<p style="font-size: 35px;" class="card-header"><b>Rohan Aditya Thirumala</b><hr><b>DOB:</b>12-02-2003<br><b>Mobile:</b>9701343474<hr><b>Address:</b>1-1-293/2,<br>Bheemunidubba,<br>Korutla,<br>505326,<br>Telangana</p>
+		</div>
+		</div>
+	</div>
+	
+	<div class="grid1-item">
+		<div class="card">	
+		<div class="card-image">
+			<img style="height:66%;width:100%"src="C:\Users\adity\OneDrive\Desktop\html\me.jpeg" alt="my Image">
+		</div>
+		</div>
+	</div>
+  	</div>
 </div>
+	
 </section>
 <section id="2">
 <br><br><br><br><br>
@@ -186,7 +196,7 @@
 	<div class="grid1-item">
 		<div class="card">	
 		<div class="card-content">
-		<p style="font-size: 35px;" class="card-header">Schooling from<br><b>St. Francis De Sales High School,<br></b>Korutla</p>
+		<p style="font-size: 35px;" class="card-header">Schooling from<br><b>St. Francis De Sales High School,<br></b>Korutla<hr></p>
 		<p style="font-size: 14px;" class="card-header"><b>Year of Passing:</b>2017-18<br><b>Score:</b>9.8 CGPA</p>
 		</div>
 		</div>
@@ -194,7 +204,7 @@
 	<div class="grid1-item">
 		<div class="card">
 		<div class="card-content">
-		<p style="font-size: 35px;"class="card-header";>Intermediate from<br><b>Sri Chaitanya Junior College,<br></b>Hyderabad</p>
+		<p style="font-size: 35px;"class="card-header";>Intermediate from<br><b>Sri Chaitanya Junior College,<br></b>Hyderabad<hr></p>
 		<p style="font-size: 14px;" class="card-header"><b>Year of Passing:</b>2018-20<br><b>Score:</b>971 out of 1000</p>
 		</div>
 		</div>
@@ -202,7 +212,7 @@
 	<div class="grid1-item">
 		<div class="card">	
 		<div class="card-content">
-		<p style="font-size:35px;" class="card-header">B.Tech from<br><b>Kakatiya Institute of Technology and Science</b></p>
+		<p style="font-size:35px;" class="card-header">B.Tech from<br><b>Kakatiya Institute of Technology and Science</b><hr></p>
 		<p style="font-size: 14px;" class="card-header"><b>Address:</b>Hanmakonda<br><b>Year of Passing:</b>2020-Present<br><b>Score:</b>8.2 CGPA(now)</p>
 		</div>
 		</div>
