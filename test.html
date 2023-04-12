@@ -15,28 +15,30 @@
  		}
     		p{
 	      color: black;
-      	font-size: 20px;
+      		font-size: 20px;
     		}
 		a{
 		color:blue;
-      	font-size: 20px;
+      		font-size: 20px;
     		}
 		h1{
-	      color: white;
-      	font-size: 150px;
+	       color: white;
+      		font-size: 150px;
 		text-align:left;
 		text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		z-index:1;
     		}
 		h2,h3{
-	      color: white;
-      	font-size: 50px;
+	       color: white;
+      		font-size: 50px;
 		text-align:left;
 		text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     		}
 		h4{
-	      color: white;
-      	font-size: 80px;
+	       color: white;
+      		font-size: 80px;
 		text-align:left;
+		z-index:1;
 		text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     		}
 		hr{
@@ -44,17 +46,7 @@
        	  background-color: black;
        	  border: none;
     		}
-			
-		button{
-		height:60px;
-		width:120px;
-		color:black;
-		z-index: 1;
-		background-color:white;
-		border-radius:20px;
-		border: 0.5px solid black;
-		box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-		}
+
 		.grid1{
 			display:grid;
 			height:40rem;
@@ -140,25 +132,53 @@
    		 0% {opacity: 0;}
     		100% {opacity: 1;}
   		}
+
+		.container {
+  		position: fixed;
+  		z-index=1;
+  		margin: 20px;
+  		width: auto;
+		}
+		.topnav {
+  		overflow: hidden;
+		background-color: rgba(0,0,0,0.9); 
+		}
+
+		.topnav a {
+  		float: left;
+  		color: #f2f2f2;
+  		text-align: center;
+  		padding: 14px 16px;
+  		text-decoration: none;
+		font-size: 17px;
+  		z-index=2;
+		}
+
+		.topnav a:hover {
+  		background-color: #FCFFE7;
+  		color: black;
+		}
   	</style> 
 	</head>
-	
+
 	<body>
-	
-	<button style="position:fixed;top:50;left:0;"onclick="f0()"> Go to top</button>
-	<button style="position:fixed;top:50;left:120;"onclick="f1()">Personal Information</button>
-	<button style="position:fixed;top:50;left:240;"onclick="f2()">Educational Qualifications</button>
-	<button style="position:fixed;top:50;left:360;"onclick="f3()">Hobbies & Interests</button>
-	<button style="position:fixed;top:50;left:480;"onclick="f4()">Skills</button>
-	<button style="position:fixed;top:50;left:600;"onclick="f5()">Achievements</button>
-	<button style="position:fixed;top:50;left:720;"onclick="f6()">Certificates</button>
-	<button style="position:fixed;top:50;left:840;"onclick="f7()">Say hello!</button>
-	
+  	<div class="container">
+    		<div class="topnav">
+			<a href="#0">Top</a>
+      			<a href="#1">Personal Information</a>
+      			<a href="#2">Educational Qualifications</a>
+      			<a href="#3">Hobbies and Interests</a>
+			<a href="#4">Skills</a>
+			<a href="#5">Achievements</a>
+			<a href="#6">Certificates</a>
+			<a href="#7">Say Hello!</a>
+    		</div>
+ 	 </div>
 
 <section id="0">
 	<br>
-    <h1 style="opacity:0;animation:fadeIn 1s ease-in forwards;">Hi there!</h1>
-      <h4 style="opacity:0;animation:fadeIn 1s ease-in forwards;font-size:100px;">This is my portfolio.</h4>
+	<h1>Hi there!</h1>
+	<h4 style="font-size:100px;">This is my portfolio.</h4>
 </section>
 <section id="1">
 <br><br><br><br><br>
@@ -315,7 +335,6 @@
 	</div>
 <div>
 
-
 </section>
 
 <section id="5">
@@ -342,14 +361,15 @@
 </section>
 
 <section id="7">
-<br><br><br><br><br>
   <h2>Say hello!</h2>
   <p>You can contact me through..</p>
   <a href="https://www.linkedin.com/in/thirumala-rohanaditya-6b8228264">~LinkedIn</a><br><br>
   <a href="mailto:adityathirumala20@gmail.com">~Mail</a><br><br>
 <a href="https://instagram.com/rohanaditya_03?igshid=YmMyMTA2M2Y=">~Instagram</a>
 </section>
-<br><br><br><br><br><br><br><br><br><br>
+<br><br>
+<h6 style="text-align:center;font-size:15px;">Copyright &copy 2023.All rights reserved.</h6>
+
 <script>
 function f0() 
 {
@@ -401,6 +421,5 @@ function ins()
 }
 
 	</script>
-	<h1>Thank you.<h1/>
 </body>
 </html>
